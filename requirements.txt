@@ -1,0 +1,14 @@
+gymnasium==1.1.1
+gym==0.26.2          # 如果用了gym老API
+stable_baselines3==2.6.0
+numpy==1.26.4
+pygame==2.6.1
+matplotlib==3.9.2
+pandas==2.3.1
+pyyaml               # 你用yaml配置就加
+torch==2.7.1
+tensorboard==2.20.0
+tqdm==4.67.1
+seaborn==0.13.2      # 可选，仅用来画图才加
+torchvision==0.17.2
+torchaudio==2.2.2
