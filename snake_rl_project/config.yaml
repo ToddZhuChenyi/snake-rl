@@ -1,9 +1,0 @@
-total_timesteps: 10000000
-learning_rate: 0.00015
-n_steps: 16384
-batch_size: 512
-gamma: 0.99
-gae_lambda: 0.95
-clip_range: 0.2
-ent_coef: 0.005
-verbose: 0
