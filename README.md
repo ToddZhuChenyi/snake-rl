@@ -61,17 +61,21 @@ tensorboard --logdir runs
 # 打开 http://localhost:6006
 ```
 
-## 📋 TODO / 未来计划
+## ✨ 项目亮点 | Highlights
 
-- [ ] 支持卷积神经网络（CNN）特征提取  
-      *Add convolutional neural network (CNN) feature extractor support*
-- [ ] 增加多种地图/障碍物样式  
-      *Add multiple map and obstacle types*
-- [ ] 环境支持动态调整难度  
-      *Dynamic environment difficulty adjustment*
-- [ ] 添加智能体对比实验和可视化  
-      *Agent benchmarking and more visualization tools*
-- [ ] 部署网页版或 Colab 演示  
-      *Deploy web/Colab demo for easier experience*
-- [ ] 支持更复杂奖励机制和自定义观察空间  
-      *More complex reward shaping & customizable observation space*
+- 完全自定义奖励设计，轻松探索不同RL训练策略
+- 多种观察空间与特征提取方式，适配MLP/CNN模型
+- 支持矢量化并行训练，高效利用多核CPU
+- 训练过程集成 Tensorboard，轻松可视化和对比
+- 代码结构清晰，上手简单，适合RL新手和研究者
+
+## 🙋‍♂️ 常见问题 | FAQ
+
+- Q: 训练慢怎么办？  
+  A: 可调大 n_envs/n_steps，或用更小地图测试。
+
+- Q: 如何自定义奖励/观测？  
+  A: 修改 snake_env 或 game_logic 文件中相应部分即可。
+
+- Q: MPS支持吗？  
+  A: Mac M1/M2/M3 可用 PyTorch MPS，但训练速度依然主要受CPU影响。
